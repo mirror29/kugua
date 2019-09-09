@@ -1,0 +1,33 @@
+{
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "titleNView": {
+    "type": "transparent",
+    "searchInput": {
+      "backgroundColor": "rgba(231, 231, 231,.7)",
+      "borderRadius": "16px",
+      "placeholder": "复制淘宝标题找券领券省钱",
+      "disabled": true,
+      "placeholderColor": "#606266"
+    },
+    "subNVues": [
+      {
+        "id": "popup",
+        "path": "pages/nvue/proup",
+        "style": {
+          "position": "popup",
+          "margin": "auto",
+          "width": "150px",
+          "height": "150px"
+        }
+      }
+    ]
+  },
+  "usingComponents": {
+    "skeleton": "/components/quick-skeleton/quick-skeleton",
+    "float": "/components/float",
+    "modal": "/components/modal",
+    "list": "/components/goods-list2",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-beibei"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "list-cell": "/components/mix-list-cell"
+  }
+}

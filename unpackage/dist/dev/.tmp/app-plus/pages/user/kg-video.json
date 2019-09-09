@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "苦瓜介绍",
+  "animationType": "pop-in",
+  "bounce": "none",
+  "titleNView": {
+    "type": "transparent"
+  },
+  "usingComponents": {}
+}

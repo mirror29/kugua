@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "9.9包邮",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "animationType": "pop-in",
+  "usingComponents": {
+    "modal": "/components/modal",
+    "list": "/components/goods-list2",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

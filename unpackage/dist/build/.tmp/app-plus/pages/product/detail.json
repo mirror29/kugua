@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "animationType": "pop-in",
+  "titleNView": {
+    "type": "transparent"
+  },
+  "usingComponents": {
+    "skeleton": "/components/quick-skeleton/quick-skeleton",
+    "float": "/components/float",
+    "countdown": "/components/uni-countdown"
+  }
+}

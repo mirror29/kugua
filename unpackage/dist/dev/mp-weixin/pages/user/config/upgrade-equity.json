@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "升级权益",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {}
+}

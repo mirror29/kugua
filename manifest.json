@@ -1,0 +1,191 @@
+{
+    "name" : "苦瓜",
+    "appid" : "__UNI__5609268",
+    "description" : "苦瓜，一款购物不剁手，躺着赚钱的神器。大额优惠券让你领到手软，分享赚钱让你全年无休收钱，真正一款为你省钱，帮你赚钱的APP。",
+    "versionName" : "3.1.2",
+    "versionCode" : 110538,
+    "transformPx" : false,
+    /* 5+App特有相关 */// "h5": {
+    //     "devServer": {
+    //         "port": 8000,
+    //         "disableHostCheck": true,
+    //         "proxy": {
+    //             "/api": {
+    //                 "target": "http://www.kuguayouhui.my",
+    //                 "changeOrigin": true,
+    //                 "secure": false
+    //             }
+    //         }
+    //     }
+    // },
+    "app-plus" : {
+        "nvueCompiler" : "uni-app",
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        "schemeWhitelist" : [ "tbopen", "tmall", "taobao", "tianmao" ],
+        "appWhitelist" : [ "tbopen", "tmall", "taobao", "tianmao" ],
+        /* 模块配置 */
+        "modules" : {
+            "Push" : {},
+            "Share" : {},
+            "Messaging" : {},
+            "VideoPlayer" : {},
+            "OAuth" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.DELETE_CACHE_FILES\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "urltypes" : [
+                    {
+                        "urlschemes" : [ "tbopen27845613" ],
+                        "id" : "tbopen"
+                    }
+                ],
+                "urlschemewhitelist" : [ "taobao", "tianmao", "tbopen", "tmall" ],
+                "privacyDescription" : {
+                    "NSPhotoLibraryAddUsageDescription" : "将图片保存至相册"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "maps" : {},
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx11d85ee3eff18311",
+                        "appsecret" : "2cb0131e2bc19a54ec019b1ab113fedf"
+                    }
+                },
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx11d85ee3eff18311",
+                        "appsecret" : "63872809983888323e5ffa36ee882c67"
+                    }
+                },
+                "statics" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "ios" : {
+                    "iphone" : {
+                        "iphonex" : "nativeplugins/Startup/startup_1125_2436.png",
+                        "portrait-896h@3x" : "nativeplugins/Startup/startup_1242_2688.png",
+                        "portrait-896h@2x" : "nativeplugins/Startup/startup_828_1792.png",
+                        "retina55" : "nativeplugins/Startup/startup_1242_2208.png",
+                        "retina47" : "nativeplugins/Startup/startup_750_1334.png",
+                        "retina40" : "nativeplugins/Startup/startup_640_1136.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "nativeplugins/Startup/startup_480_762.png",
+                    "xhdpi" : "nativeplugins/Startup/startup_720_1242.png",
+                    "xxhdpi" : "nativeplugins/Startup/startup_1080_1882.png"
+                }
+            }
+        },
+        "nativePlugins" : {
+            "dasu-alibaichuan" : {
+                "__plugin_info__" : {
+                    "name" : "阿里百川支持安卓ios",
+                    "description" : "阿里百川支持安卓ios",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=384",
+                    "android_package_name" : "com.app.kugua",
+                    "ios_bundle_id" : "com.t972561100.khv",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "384",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "苦瓜优惠券",
+        "router" : {
+            "base" : ""
+        }
+    }
+}
+// "h5": {
+//     "devServer": {
+//         "port": 8000,
+//         "disableHostCheck": true,
+//         "proxy": {
+//             "/api": {
+//                 "target": "http://www.kuguayouhui.my",
+//                 "changeOrigin": true,
+//                 "secure": false
+//             }
+//         }
+//     }
+// }
+

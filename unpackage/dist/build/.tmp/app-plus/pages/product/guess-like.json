@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "猜你喜欢",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "animationType": "pop-in",
+  "usingComponents": {
+    "list": "/components/guess-list"
+  }
+}

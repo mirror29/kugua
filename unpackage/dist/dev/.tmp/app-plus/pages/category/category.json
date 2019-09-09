@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "产品分类",
+  "bounce": "none",
+  "usingComponents": {
+    "skeleton": "/components/quick-skeleton/quick-skeleton"
+  }
+}

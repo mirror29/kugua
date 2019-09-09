@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "lo-list": "/components/other/lower-list"
+  },
+  "component": true
+}

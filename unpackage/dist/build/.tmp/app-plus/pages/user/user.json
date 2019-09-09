@@ -1,0 +1,23 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": true,
+  "bounce": "none",
+  "titleNView": {
+    "type": "transparent",
+    "buttons": [
+      {
+        "fontSrc": "/static/iconfont.ttf",
+        "text": "",
+        "fontSize": "24",
+        "color": "#303133",
+        "width": "46px",
+        "background": "rgba(0,0,0,0)"
+      }
+    ]
+  },
+  "usingComponents": {
+    "float": "/components/float",
+    "modal": "/components/modal",
+    "list-cell": "/components/mix-list-cell"
+  }
+}

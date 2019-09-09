@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "助力升级",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {}
+}

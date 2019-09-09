@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "文章详情",
+  "animationType": "pop-in",
+  "bounce": "none",
+  "titleNView": {
+    "buttons": []
+  },
+  "usingComponents": {}
+}

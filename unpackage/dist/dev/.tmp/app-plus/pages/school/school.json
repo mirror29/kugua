@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "苦瓜商学院",
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {
+    "list": "/components/article-list",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

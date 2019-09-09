@@ -1,0 +1,1 @@
+<view class="_div data-v-294004ee"><view class="{{['view data-v-294004ee',toggle?'animation':'animation-back']}}"><image src="{{item.photoUrl}}" mode class="data-v-294004ee"></image><text class="data-v-294004ee">{{item.text}}</text></view></view>

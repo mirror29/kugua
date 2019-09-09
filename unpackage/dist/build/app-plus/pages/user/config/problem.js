@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"coll-item wx-eep .",[1],"uni-collapse-cell__title-text { padding-left: ",[0,30]," !important; font-size: ",[0,28],"; }\n.",[1],"content { padding: ",[0,20]," ",[0,50],"; }\n",],undefined,{path:"./pages/user/config/problem.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/config/problem.wxml') } }));

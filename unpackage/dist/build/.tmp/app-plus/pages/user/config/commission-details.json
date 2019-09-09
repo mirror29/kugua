@@ -1,0 +1,24 @@
+{
+  "navigationBarTitleText": "每月佣金记录",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "titleNView": {
+    "buttons": [
+      {
+        "fontSrc": "/static/iconfont.ttf",
+        "text": "",
+        "fontSize": "20px",
+        "color": "#303133",
+        "background": "rgba(0,0,0,0)"
+      }
+    ]
+  },
+  "usingComponents": {
+    "t-table": "/components/t-table/t-table",
+    "t-th": "/components/t-table/t-th",
+    "t-tr": "/components/t-table/t-tr",
+    "t-td": "/components/t-table/t-td",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

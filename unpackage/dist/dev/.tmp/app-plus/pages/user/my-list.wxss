@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 需固定高度 */
+page,
+.page-warp,
+.swiper{
+	height: 100%;
+}
+.top-warp{
+	z-index: 999;
+	position: fixed;
+	top: --window-top; /* css变量 */
+	left: 0;
+	width: 100%;
+	height: 80rpx;
+	background-color: white;
+	text-align: center;
+	border-bottom: 1rpx solid #ddd;
+}
+.top-warp view{
+	display: inline-block;
+	width: 22%;
+	line-height: 80rpx;
+	font-size: 28rpx;
+	margin: 0 10rpx;
+}
+.top-warp .active{
+	border-bottom: 2rpx solid rgb(252, 117, 55);
+	padding: 0 10rpx;
+	color: rgb(252, 117, 55);
+	height: 80rpx;
+}
+

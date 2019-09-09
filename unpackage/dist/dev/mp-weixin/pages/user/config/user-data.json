@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人资料",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {}
+}

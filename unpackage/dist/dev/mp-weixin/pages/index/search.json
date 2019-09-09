@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "搜索",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "usingComponents": {
+    "m-search": "/components/mehaotian-search/mehaotian-search"
+  }
+}

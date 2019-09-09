@@ -1,0 +1,1 @@
+<view class="t-table data-v-4b21d7c8" style="{{'border-width:'+(border+'px')+';'+('border-color:'+(borderColor)+';')}}"><slot></slot></view>

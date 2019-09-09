@@ -1,0 +1,137 @@
+{
+  "pages": [
+    "pages/guide/index",
+    "pages/index/index",
+    "pages/category/category",
+    "pages/search/search",
+    "pages/share/share",
+    "pages/user/user",
+    "pages/user/service",
+    "pages/product/detail",
+    "pages/product/detail-tao",
+    "pages/product/baby",
+    "pages/product/99",
+    "pages/product/share",
+    "pages/product/goods-list",
+    "pages/index/search",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/login/forget",
+    "pages/login/edit-pass",
+    "pages/login/protocol",
+    "pages/login/bind-code",
+    "pages/login/bind-mobile",
+    "pages/product/buy-look",
+    "pages/product/guess-like",
+    "pages/user/my-list",
+    "pages/user/lower-list",
+    "pages/user/earnings",
+    "pages/user/statement",
+    "pages/user/team",
+    "pages/user/config/version",
+    "pages/user/parnter/commission",
+    "pages/user/parnter/finance",
+    "pages/user/parnter/transfer",
+    "pages/user/parnter/activate",
+    "pages/user/config/problem",
+    "pages/user/config/invite-friends",
+    "pages/user/config/user-data",
+    "pages/user/config/commission-details",
+    "pages/notice/notice",
+    "pages/user/oauth",
+    "pages/user/kg-video",
+    "pages/user/config/withdraw-list",
+    "pages/user/parnter/withdraw",
+    "pages/user/parnter/account-bind",
+    "pages/user/config/upgrade-equity",
+    "pages/user/config/recommend-code",
+    "pages/user/config/collection",
+    "pages/upload/upload",
+    "pages/school/school",
+    "pages/school/school-list",
+    "pages/school/article",
+    "pages/alipay/alipay-list",
+    "pages/alipay/alipay-add",
+    "pages/alipay/alipay-edit"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "苦瓜优惠券",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#e98f36",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/icon/home.png",
+        "selectedIconPath": "static/images/icon/home-act.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "static/images/icon/search.png",
+        "selectedIconPath": "static/images/icon/search-act.png",
+        "text": "超级搜索"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "iconPath": "static/images/icon/share.png",
+        "selectedIconPath": "static/images/icon/share-act.png",
+        "text": "一键分享"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/icon/user.png",
+        "selectedIconPath": "static/images/icon/user-act.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "nvue": {
+    "pages": {
+      "pages/product/video.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "抖券",
+          "onReachBottomDistance": 50,
+          "animationType": "pop-in",
+          "bounce": "none",
+          "navigationBarTextStyle": "white",
+          "titleNView": {
+            "type": "transparent"
+          }
+        },
+        "nvue": true
+      },
+      "pages/guide/list.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "启动介绍页",
+          "navigationStyle": "custom",
+          "titleNView": false,
+          "bounce": "none"
+        },
+        "nvue": true
+      }
+    }
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "苦瓜",
+  "compilerVersion": "2.2.2",
+  "usingComponents": {
+    "w-loading": "/components/w-loading",
+    "skeleton": "/components/quick-skeleton/quick-skeleton",
+    "modal": "/components/modal",
+    "float": "/components/float"
+  }
+}

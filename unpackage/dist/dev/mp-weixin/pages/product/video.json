@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "抖券",
+  "onReachBottomDistance": 50,
+  "titleNView": false,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {}
+}

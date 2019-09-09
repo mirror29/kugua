@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"warp.",[1],"data-v-7a18ee4e { background-color: #ffffff; }\n.",[1],"table-b.",[1],"data-v-7a18ee4e { background-color: #ffffff; font-size: ",[0,24],"; width: 99.75vw; }\n.",[1],"warp.",[1],"data-v-7a18ee4e .",[1],"uni-scroll-view { width: 99.75vw; }\n",],undefined,{path:"./pages/user/parnter/commission.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/parnter/commission.wxml') } }));

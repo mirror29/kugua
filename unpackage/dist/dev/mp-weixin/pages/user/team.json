@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的团队",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "animationType": "pop-in",
+  "usingComponents": {
+    "my-list": "/components/other/my-list",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

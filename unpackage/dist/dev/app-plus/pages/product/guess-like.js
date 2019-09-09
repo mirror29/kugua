@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"data-v-0b1f2c04 .",[1],"like-tit { display: none; }\n",],undefined,{path:"./pages/product/guess-like.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/product/guess-like.wxml') } }));

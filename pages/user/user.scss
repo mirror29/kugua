@@ -1,0 +1,520 @@
+%flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%section {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: #fff;
+  border-radius: 10upx;
+}
+
+.user-section {
+  height: 520upx;
+  padding: 100upx 30upx 0;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+    opacity: .7;
+  }
+}
+
+.user-info-box {
+  height: 180upx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  .portrait {
+    width: 130upx;
+    height: 130upx;
+    border: 5upx solid #fff;
+    border-radius: 50%;
+  }
+
+  .info-box {
+    .user-name {
+      display: flex;
+      align-items: center;
+
+      .username {
+        font-size: $font-lg + 2upx;
+        color: $uni-text-color-inverse;
+        margin-left: 16upx;
+
+        .center{
+          font-size: 24upx;
+        }
+      }
+
+      .level {
+        position: relative;
+        margin-left: 10upx;
+
+        image {
+          height: 40upx;
+          width: 140upx;
+        }
+
+        text {
+          position: absolute;
+          left: 40upx;
+          top: 3upx;
+          font-size: 24upx;
+          color: #ffe6b3;
+          transform: scale(0.85);
+        }
+
+      }
+    }
+
+    .invitation {
+      color: $uni-text-color-inverse;
+      font-size: $uni-font-size-sm;
+      margin: $uni-spacing-col-base;
+
+      .number {
+        // font-size: 24upx;
+      }
+
+      .copy {
+        margin-left: $uni-spacing-col-lg;
+        text-align: center;
+        background-color: #ccc;
+        border-radius: 40upx;
+        padding: 4upx 30upx;
+        opacity: .9;
+      }
+    }
+  }
+}
+
+.vip-card-box {
+  display: flex;
+  flex-direction: column;
+  color: #f7d680;
+  height: 240upx;
+  background: linear-gradient(left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .8));
+  border-radius: 16upx 16upx 0 0;
+  overflow: hidden;
+  position: relative;
+  padding: 24upx;
+
+  .card-bg {
+    position: absolute;
+    top: 70upx;
+    right: 0;
+    width: 270upx;
+    height: 180upx;
+  }
+
+  .b-btn {
+    position: absolute;
+    right: 20upx;
+    top: 26upx;
+    width: 132upx;
+    height: 48upx;
+    text-align: center;
+    line-height: 48upx;
+    font-size: 26upx;
+    color: #36343c;
+    border-radius: 10upx;
+    background: linear-gradient(left, #f9e6af, #ffd465);
+    z-index: 1;
+  }
+
+  .tit {
+    font-size: 36upx;
+    color: #f7d680;
+    margin-bottom: 28upx;
+
+    .yticon {
+      color: #f6e5a3;
+      margin-right: 16upx;
+    }
+  }
+
+  .e-b {
+    font-size: $font-sm;
+    color: #d8cba9;
+    margin-top: 10upx;
+  }
+}
+
+.cover-container {
+  background: $page-color-base;
+  margin-top: -150upx;
+  padding: 0 30upx;
+  position: relative;
+  background: #f5f5f5;
+  padding-bottom: 20upx;
+
+  .arc {
+    position: absolute;
+    left: 0;
+    top: -34upx;
+    width: 100%;
+    height: 36upx;
+  }
+}
+
+.tj-sction {
+  @extend %section;
+
+  .tj-item {
+    @extend %flex-center;
+    flex-direction: column;
+    height: 140upx;
+    font-size: $font-sm;
+    color: #75787d;
+  }
+
+  .num {
+    font-size: $font-lg;
+    color: $font-color-dark;
+    margin-bottom: 8upx;
+  }
+}
+
+// 合伙人管理
+.partner{
+  @extend %section;
+  margin-top: 20upx;
+  .partner-con{
+    display: flex;
+    justify-content: space-between;
+    padding: 28upx 0;
+
+    .partner-li{
+      @extend %flex-center;
+      width: 172upx;
+
+      image{
+        height: 60upx;
+        width: 60upx;
+      }
+
+      text{
+        font-size: $font-sm;
+        margin-top: 10upx;
+      }
+    }
+  }
+}
+
+// 订单
+.order-section {
+  @extend %section;
+  padding: 10upx 0;
+  margin-top: 20upx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .kg-video{
+    padding: 25upx;
+    width: 100%;
+    text-align: center;
+
+    text{
+      width: 100%;
+      font-size: 38upx;
+      background: linear-gradient(to right, #ff6d00, red);
+      font-family: BMXY;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+
+  .order-item {
+    @extend %flex-center;
+    width: 160upx;
+    height: 145upx;
+    border-radius: 10upx;
+    font-size: $font-sm;
+    color: $font-color-dark;
+    text-align: center;
+
+    .icon {
+      color: $uni-text-color-inverse;
+      font-size: 70upx;
+      border-radius: 50%;
+      // padding: 5upx;
+      height: 90upx;
+      line-height: 90upx;
+      width: 90upx;
+      text-align: center;
+      margin-bottom: 8upx;
+    }
+
+    .order-icon1 {
+      background-color: #83e96a;
+    }
+
+    .order-icon2 {
+      background-color: #c532b2;
+      font-size: 60upx;
+    }
+
+    .order-icon3 {
+      background-color: #ec3838;
+      font-size: 60upx;
+    }
+
+    .order-icon4 {
+      background-color: #28bba2;
+      font-size: 60upx;
+    }
+
+    .order-icon5 {
+      background-color: #1d8be6;
+      font-size: 60upx;
+    }
+
+    .order-icon6{
+      background-color: #f3cd26;
+      font-size: 60upx;
+    }
+  }
+}
+
+// 升级
+.up-level {
+  @extend %section;
+  margin-top: 20upx;
+  background-color: transparent !important;
+
+  image {
+    height: 180upx;
+    width: 100%;
+  }
+}
+
+/* 商学院 */
+.school{
+  @extend %section;
+  padding: 24upx 0;
+  margin-top: 20upx;
+  display: flex;
+  flex-direction: column;
+  .school-tit{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26upx;
+    height: 66upx;
+    border-bottom: 1px solid #efefef;
+
+    .title{
+      color: $uni-text-color;
+      font-size: 34upx;
+      font-weight: bold;
+    }
+
+    .look{
+      color: $uni-text-color-placeholder;
+      font-size: 28upx;
+      margin-top: 8upx;
+
+      .icon{
+        font-size: 26upx;
+        margin-left: 5upx;
+      }
+    }
+  }
+  .school-con{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 14upx 26upx 0 26upx;
+
+    .school-li{
+      width: 306upx;
+      color: $uni-text-color;
+      background-color: #f7f6fc;
+      border-radius: 10upx;
+      height: 90upx;
+      line-height: 90upx;
+      margin: 6upx;
+      font-size: 32upx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon{
+        font-size: 48upx;
+        color: #EF9775;
+        margin-right: 6upx;
+      }
+    }
+  }
+}
+
+// 菜单栏
+.menu {
+  @extend %section;
+  padding: 28upx 0;
+  margin-top: 20upx;
+  display: flex;
+  flex-wrap: wrap;
+
+  .menu-list {
+    text-align: center;
+    margin: 10upx 5upx;
+    width: 31%;
+    @extend %flex-center;
+
+    .icon {
+      color: $uni-text-color-inverse;
+      font-size: 60upx;
+      border-radius: 50%;
+      height: 100upx;
+      line-height: 100upx;
+      width: 100upx;
+      text-align: center;
+      margin-bottom: 8upx;
+    }
+
+    .title {
+      font-size: 32upx;
+    }
+
+    .note {
+      font-size: 26upx;
+      color: $uni-text-color-grey;
+    }
+
+    .menu-icon1 {
+      background-color: #0bb1e4;
+      font-size: 55upx;
+    }
+
+    .menu-icon2 {
+      background-color: #f59323;
+      font-size: 45upx;
+    }
+
+    .menu-icon3 {
+      background-color: #23f1b4;
+      font-size: 50upx;
+    }
+
+    .menu-icon4 {
+      background-color: #b85e0b;
+    }
+
+    .menu-icon5 {
+      background-color: #158eb3;
+    }
+
+    .menu-icon6 {
+      background-color: #f5e344;
+    }
+
+    .menu-icon7 {
+      background-color: #92e237;
+    }
+
+    .menu-icon8 {
+      background-color: #2de7c8;
+    }
+
+    .menu-icon9 {
+      background-color: #e78331;
+    }
+  }
+}
+
+// 开店礼包
+.open-gift {
+  @extend %section;
+  padding: 28upx 0;
+  margin-top: 20upx;
+  flex-direction: column;
+
+  .open-tit {
+    text-align: center;
+    width: 688upx;
+    border-bottom: 1upx solid #efefef;
+    padding-bottom: $uni-spacing-col-base;
+  }
+
+  .open-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12upx;
+
+    .open-list {
+      margin: 4px;
+      width: 47%;
+      border-radius: 10upx;
+      background-color: $uni-bg-color;
+      border: 1px solid #efefef;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+      image {
+        width: 100%;
+        border-top-left-radius: 10upx;
+        border-top-right-radius: 10upx;
+        height: 300upx
+      }
+
+      .open-foot {
+        padding: 12upx;
+
+        .open-foot-tit {
+          font-weight: normal;
+          width: 200upx;
+          color: #363636;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .price {
+          color: #c72f26;
+          font-size: 40upx;
+          font-weight: bold;
+
+          .sym-price {
+            font-size: 24upx;
+            font-weight: normal;
+          }
+
+          .original-price {
+            font-size: 24upx;
+            font-weight: normal;
+            color: #666666;
+            text-decoration: line-through;
+            font-weight: normal;
+            margin-left: 10upx;
+          }
+        }
+
+        .open-btn {
+          background-color: #c72f26;
+          border-radius: 5px;
+          padding: 8upx 0;
+          width: 260upx;
+          text-align: center;
+          color: $uni-text-color-inverse;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 12upx;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "一键分享",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "usingComponents": {
+    "skeleton": "/components/quick-skeleton/quick-skeleton",
+    "float": "/components/float",
+    "modal": "/components/modal",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

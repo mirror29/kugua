@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"content.",[1],"data-v-4c676ce2 { background-color: #ffffff; color: #333; padding: ",[0,20],"; }\n",],undefined,{path:"./pages/login/protocol.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/login/protocol.wxml') } }));

@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['Mclose',['$event']]]]]}}" class="{{['mask',mask==1?'mask-show':'']}}" bindtap="__e"><view class="loading14"><view></view><view></view><view></view><view></view></view><view class="title">{{text}}</view></view><view class="over-title">{{overText}}</view></view>

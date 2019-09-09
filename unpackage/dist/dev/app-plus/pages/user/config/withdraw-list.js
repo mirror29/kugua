@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"warp.",[1],"data-v-ca6fa292 { background-color: #ffffff; }\n.",[1],"table-b.",[1],"data-v-ca6fa292 { background-color: #ffffff; font-size: ",[0,24],"; width: 99.75vw; }\n.",[1],"warp.",[1],"data-v-ca6fa292 .",[1],"uni-scroll-view { width: 99.75vw; }\n",],undefined,{path:"./pages/user/config/withdraw-list.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/config/withdraw-list.wxml') } }));

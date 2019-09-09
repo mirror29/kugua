@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "超级搜索",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

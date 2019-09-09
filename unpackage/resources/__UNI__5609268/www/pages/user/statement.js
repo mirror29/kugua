@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"content.",[1],"data-v-02ec782a { background-color: #ffffff; color: #333; padding-bottom: ",[0,60],"; }\n.",[1],"content .",[1],"description.",[1],"data-v-02ec782a { font-size: ",[0,26],"; margin: 0 ",[0,36],"; }\n",],undefined,{path:"./pages/user/statement.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/statement.wxml') } }));

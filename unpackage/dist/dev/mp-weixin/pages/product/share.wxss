@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 单行省略 */
+/* 多行省略 */
+/* 文字间距 */
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+.share.data-v-c3d34984 {
+  padding: 20rpx 6rpx 20rpx 12rpx;
+  background-color: #ffffff;
+  margin: 20rpx 0;
+}
+.share .share-tit.data-v-c3d34984 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.share .share-tit .tit-left.data-v-c3d34984 {
+      height: 428rpx;
+      width: 300rpx;
+      overflow: hidden;
+      position: relative;
+      margin-right: 7rpx;
+}
+.share .share-tit .tit-left image.data-v-c3d34984 {
+        height: 446rpx;
+        width: 300rpx;
+}
+.share .share-tit .tit-left text.data-v-c3d34984 {
+        position: absolute;
+        font-size: 60rpx;
+        right: 10rpx;
+        top: 10rpx;
+        opacity: .9;
+}
+.share .share-tit .tit-left .active.data-v-c3d34984 {
+        color: #f01426;
+}
+.share .share-tit .tit-left .noactive.data-v-c3d34984 {
+        color: #333;
+}
+.share .share-tit .tit-right.data-v-c3d34984 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      width: 460rpx;
+}
+.share .share-tit .tit-right .right-item.data-v-c3d34984 {
+        position: relative;
+}
+.share .share-tit .tit-right .right-item image.data-v-c3d34984 {
+          width: 210rpx;
+          height: 210rpx;
+          margin: 0 4rpx;
+}
+.share .share-tit .tit-right .right-item text.data-v-c3d34984 {
+          position: absolute;
+          font-size: 50rpx;
+          right: 10rpx;
+          top: 10rpx;
+          opacity: .9;
+}
+.share .share-tit .tit-right .right-item .active.data-v-c3d34984 {
+          color: #f01426;
+}
+.share .share-tit .tit-right .right-item .noactive.data-v-c3d34984 {
+          color: #333;
+}
+.share .name.data-v-c3d34984 {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+    padding: 10rpx;
+    border-bottom: 2rpx dashed #fc7537;
+    margin: 14rpx 14rpx 0 14rpx;
+}
+.share .info.data-v-c3d34984 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 14rpx 14rpx 14rpx;
+    padding: 16rpx;
+    border-bottom: 2rpx dashed #fc7537;
+    line-height: 2.2;
+    color: #333;
+}
+.share button.data-v-c3d34984 {
+    height: 80rpx;
+    line-height: 80rpx;
+    width: 500rpx;
+    border: none;
+    background-color: #f75f07;
+    color: #fff;
+    -webkit-border-radius: 40rpx;
+            border-radius: 40rpx;
+    font-size: 36rpx;
+    margin-top: 40rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10rpx;
+}
+

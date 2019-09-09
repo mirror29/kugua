@@ -1,0 +1,692 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+        "path": "pages/guide/index",
+        "style": {
+            "navigationBarTitleText": "启动页",
+            "app-plus": {
+                "titleNView": false
+            },
+            "navigationStyle": "custom"
+        }
+    },
+    {
+        "path": "pages/guide/list",
+        "style": {
+            "navigationBarTitleText": "启动介绍页",
+            "app-plus": {
+                "titleNView": false,
+                "bounce": "none"
+            },
+            "navigationStyle": "custom"
+        }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        // #ifdef MP
+        "navigationBarTitleText": "苦瓜优惠券",
+        //"navigationStyle": "custom",
+        // #endif
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent",
+            "searchInput": {
+              "backgroundColor": "rgba(231, 231, 231,.7)",
+              "borderRadius": "16px",
+              "placeholder": "复制淘宝标题找券领券省钱",
+              "disabled": true,
+              "placeholderColor": "#606266"
+            },
+            // "buttons": [
+            //   {
+            //     "fontSrc": "/static/yticon.ttf",
+            //     "text": "\ue60d",
+            //     "fontSize": "26px",
+            //     "color": "#303133",
+            //     "float": "left",
+            //     "background": "rgba(0,0,0,0)"
+            //   },
+            //   {
+            //     "fontSrc": "/static/yticon.ttf",
+            //     "text": "\ue744",
+            //     "fontSize": "27px",
+            //     "color": "#303133",
+            //     "background": "rgba(0,0,0,0)",
+            //     "redDot": true
+            //   }
+            // ],
+            "subNVues":[{
+                "id": "popup",
+                "path": "pages/nvue/proup",
+                "style": {
+                    "position": "popup",
+                    "margin":"auto",
+                    "width": "150px",
+                    "height": "150px"
+                }
+
+            }]
+          }
+        },
+        "onReachBottomDistance": 50,
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/category/category",
+      "style": {
+        "navigationBarTitleText": "产品分类",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/search/search",
+      "style": {
+        "navigationBarTitleText": "超级搜索",
+        "bounce": "none",
+        // #ifdef MP
+        "navigationStyle": "custom",
+        // #endif
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": {
+            "type": "transparent"
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/share/share",
+      "style": {
+        "navigationBarTitleText": "一键分享",
+        "onReachBottomDistance": 50,
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": true,
+        // "bounce": "none",
+        // #ifdef MP
+        "navigationStyle": "custom",
+        // #endif
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": {
+            "type": "transparent",
+            "buttons": [
+              {
+                "fontSrc": "/static/iconfont.ttf",
+                "text": "\ue64e",
+                "fontSize": "24",
+                "color": "#303133",
+                "width": "46px",
+                "background": "rgba(0,0,0,0)"
+              }
+              // {
+              //   "fontSrc": "/static/yticon.ttf",
+              //   "text": "\ue744",
+              //   "fontSize": "28px",
+              //   "color": "#303133",
+              //   "background": "rgba(0,0,0,0)",
+              //   "redDot": true
+              // }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/user/service",
+      "style": {
+        "navigationBarTitleText": "客服",
+        "enablePullDownRefresh": true,
+        "bounce": "none",
+        "app-plus": {
+          "bounce": "none",
+          "titleNView": {
+            "type": "transparent"
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/product/detail",
+      "style": {
+        "navigationBarTitleText": "商品详情",
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent"
+          }
+        },
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/product/detail-tao",
+      "style": {
+        "navigationBarTitleText": "商品详情",
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent"
+          }
+        },
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/product/baby",
+      "style": {
+        "navigationBarTitleText": "母婴专区",
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/product/auth",
+      "style": {
+        "navigationBarTitleText": "淘宝授权",
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/product/video",
+      "style": {
+        "navigationBarTitleText": "抖券",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none",
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent"
+          }
+        },
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/product/99",
+      "style": {
+        "navigationBarTitleText": "9.9包邮",
+        "onReachBottomDistance": 50,
+        "bounce": "none", // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/product/share",
+      "style": {
+        "navigationBarTitleText": "分享",
+        "onReachBottomDistance": 50,
+        "bounce": "none", // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/product/goods-list",
+      "style": {
+        "navigationBarTitleText": "商品列表",
+        "onReachBottomDistance": 50,
+        "bounce": "none", // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/index/search",
+      "style": {
+        "navigationBarTitleText": "搜索",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in"
+      },
+      "bounce": "none"
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登陆",
+        "onReachBottomDistance": 50,
+        "bounce": "none" ,
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/login/register",
+      "style": {
+        "navigationBarTitleText": "注册",
+        "onReachBottomDistance": 50,
+        "bounce": "none" ,
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/login/forget",
+      "style": {
+        "navigationBarTitleText": "忘记密码",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/login/edit-pass",
+      "style": {
+        "navigationBarTitleText": "修改密码",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/login/protocol",
+      "style": {
+        "navigationBarTitleText": "苦瓜用户协议",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/login/bind-code",
+      "style": {
+        "navigationBarTitleText": "绑定邀请码",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/login/bind-mobile",
+      "style": {
+        "navigationBarTitleText": "绑定手机号",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/product/buy-look",
+      "style": {
+        "navigationBarTitleText": "边买边看",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/product/guess-like",
+      "style": {
+        "navigationBarTitleText": "猜你喜欢",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/user/my-list",
+      "style": {
+        "navigationBarTitleText": "我的订单",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+      }
+    },
+    {
+      "path": "pages/user/lower-list",
+      "style": {
+        "navigationBarTitleText": "下级订单",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none" // 取消iOS回弹,避免和下拉刷新冲突 (小程序无法取消)
+      }
+    },
+    {
+      "path": "pages/user/earnings",
+      "style": {
+        "navigationBarTitleText": "我的收益",
+        "onReachBottomDistance": 50,
+        "enablePullDownRefresh": true,
+        "animationType": "pop-in",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "fontSrc": "/static/iconfont.ttf",
+                "text": "\ue60b",
+                "fontSize": "20px",
+                "color": "#303133",
+                "background": "rgba(0,0,0,0)"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/user/statement",
+      "style": {
+        "navigationBarTitleText": "收益说明",
+        "onReachBottomDistance": 50,
+        // "enablePullDownRefresh": true,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/team",
+      "style": {
+        "navigationBarTitleText": "我的团队",
+        "onReachBottomDistance": 50,
+        "bounce": "none",
+        "animationType": "pop-in"
+      }
+    },
+    {
+      "path": "pages/user/config/version",
+      "style": {
+        "navigationBarTitleText": "版本信息",
+        "onReachBottomDistance": 50,
+        // "enablePullDownRefresh": true,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/parnter/commission",
+      "style": {
+        "navigationBarTitleText": "佣金明细",  //店长
+        "onReachBottomDistance": 50,
+        // "enablePullDownRefresh": true,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/parnter/finance",
+      "style": {
+        "navigationBarTitleText": "财务明细",
+        "onReachBottomDistance": 50,
+        // "enablePullDownRefresh": true,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/parnter/transfer",
+      "style": {
+        "navigationBarTitleText": "用户转账",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/parnter/activate",
+      "style": {
+        "navigationBarTitleText": "激活用户",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/problem",
+      "style": {
+        "navigationBarTitleText": "常见问题",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/invite-friends",
+      "style": {
+        "navigationBarTitleText": "邀请好友",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/user-data",
+      "style": {
+        "navigationBarTitleText": "个人资料",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/commission-details",
+      "style": {
+        "navigationBarTitleText": "每月佣金记录",  //个人
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              {
+                "fontSrc": "/static/iconfont.ttf",
+                "text": "\ue60b",
+                "fontSize": "20px",
+                "color": "#303133",
+                "background": "rgba(0,0,0,0)"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path" : "pages/notice/notice",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path" : "pages/user/oauth",
+      "style": {
+        "navigationBarTitleText": "淘宝授权",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/kg-video",
+      "style": {
+        "navigationBarTitleText": "苦瓜介绍",
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent"
+          }
+        },
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/withdraw-list",
+      "style": {
+        "navigationBarTitleText": "提现记录",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/parnter/withdraw",
+      "style": {
+        "navigationBarTitleText": "提现",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/parnter/account-bind",
+      "style": {
+        "navigationBarTitleText": "账号绑定",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/upgrade-equity",
+      "style": {
+        "navigationBarTitleText": "助力升级",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/recommend-code",
+      "style": {
+        "navigationBarTitleText": "邀请码",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/user/config/collection",
+      "style": {
+        "navigationBarTitleText": "我的收藏",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/upload/upload",
+      "style": {
+        "navigationBarTitleText": "图片裁剪",
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/school/school",
+      "style": {
+        "navigationBarTitleText": "苦瓜商学院",
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/school/school-list",
+      "style": {
+        "navigationBarTitleText": "商学院列表",
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/school/article",
+      "style": {
+        "navigationBarTitleText": "文章详情",
+        "animationType": "pop-in",
+        "bounce": "none",
+        "app-plus": {
+          "titleNView": {
+            "buttons": [
+              // {
+              //   "fontSrc": "/static/iconfont.ttf",
+              //   "text": "\ue658",
+              //   "fontSize": "20px",
+              //   "color": "#303133",
+              //   "background": "rgba(0,0,0,0)"
+              // }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/alipay/alipay-list",
+      "style": {
+        "navigationBarTitleText": "支付宝账号",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/alipay/alipay-add",
+      "style": {
+        "navigationBarTitleText": "新增支付宝账号",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    },
+    {
+      "path": "pages/alipay/alipay-edit",
+      "style": {
+        "navigationBarTitleText": "编辑支付宝账号",
+        "onReachBottomDistance": 50,
+        "animationType": "pop-in",
+        "bounce": "none"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "苦瓜优惠券",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#e98f36",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/icon/home.png",
+        "selectedIconPath": "static/images/icon/home-act.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "static/images/icon/search.png",
+        "selectedIconPath": "static/images/icon/search-act.png",
+        "text": "超级搜索"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "iconPath": "static/images/icon/share.png",
+        "selectedIconPath": "static/images/icon/share-act.png",
+        "text": "一键分享"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/icon/user.png",
+        "selectedIconPath": "static/images/icon/user-act.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "condition": {
+    //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  }
+}

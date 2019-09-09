@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "客服",
+  "enablePullDownRefresh": true,
+  "bounce": "none",
+  "titleNView": {
+    "type": "transparent"
+  },
+  "usingComponents": {}
+}

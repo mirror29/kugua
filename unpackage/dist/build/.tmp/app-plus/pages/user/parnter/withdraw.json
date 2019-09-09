@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "提现",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {}
+}

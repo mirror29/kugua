@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/goods-list"],{1724:function(t,e,n){},"3fa5":function(t,e,n){"use strict";var r=n("1724"),a=n.n(r);a.a},"3fea":function(t,e,n){"use strict";n.r(e);var r=n("d85d"),a=n.n(r);for(var o in r)"default"!==o&&function(t){n.d(e,t,function(){return r[t]})}(o);e["default"]=a.a},"7ea0":function(t,e,n){"use strict";var r=function(){var t=this,e=t.$createElement;t._self._c},a=[];n.d(e,"a",function(){return r}),n.d(e,"b",function(){return a})},d177:function(t,e,n){"use strict";n.r(e);var r=n("7ea0"),a=n("3fea");for(var o in a)"default"!==o&&function(t){n.d(e,t,function(){return a[t]})}(o);n("3fa5");var u=n("2877"),c=Object(u["a"])(a["default"],r["a"],r["b"],!1,null,"6295a70b",null);e["default"]=c.exports},d85d:function(t,e,n){"use strict";(function(t,r){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=n("2f62");function o(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{},r=Object.keys(n);"function"===typeof Object.getOwnPropertySymbols&&(r=r.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),r.forEach(function(e){u(t,e,n[e])})}return t}function u(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}var c={data:function(){return{}},props:{list:Array},computed:o({},(0,a.mapState)(["userMsg"])),methods:{navToDetailPage:function(e){console.log(t(e," at components\\goods-list.vue:58"));var n=e;r.navigateTo({url:"/pages/product/detail-tao?num_iid=".concat(n)})}}};e.default=c}).call(this,n("0de9")["default"],n("6e42")["default"])}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/goods-list-create-component',
+    {
+        'components/goods-list-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('6e42')['createComponent'](__webpack_require__("d177"))
+        })
+    },
+    [['components/goods-list-create-component']]
+]);                

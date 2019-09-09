@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "超级搜索",
+  "bounce": "none",
+  "titleNView": {
+    "type": "transparent"
+  },
+  "usingComponents": {
+    "float": "/components/float",
+    "modal": "/components/modal",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "list": "/components/guess-list"
+  }
+}

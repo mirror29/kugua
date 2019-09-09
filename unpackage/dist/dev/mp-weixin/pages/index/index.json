@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "苦瓜优惠券",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "usingComponents": {
+    "list": "/components/goods-list2",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-beibei"
+  }
+}

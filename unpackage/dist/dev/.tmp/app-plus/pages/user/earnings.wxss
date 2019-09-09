@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 单行省略 */
+/* 多行省略 */
+/* 文字间距 */
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+.content .title.data-v-76d97028 {
+  background-color: #fc7537;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.content .title .number.data-v-76d97028 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1.6;
+}
+.content .title .withdraw.data-v-76d97028 {
+    border: 1rpx solid #fff;
+    border-radius: 40rpx;
+    width: 140rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+.content .taoke.data-v-76d97028 {
+  text-align: center;
+  padding-top: 16rpx;
+  color: #333;
+}
+.content .taoke .taoke-tit.data-v-76d97028 {
+    font-size: 34rpx;
+    line-height: 50rpx;
+    height: 50rpx;
+    font-weight: 550;
+    color: #5f5f5f;
+}
+.content .taoke .taoke-con.data-v-76d97028 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.content .taoke .taoke-con view.data-v-76d97028 {
+      background-color: #ffffff;
+      width: 372rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 16rpx;
+      padding: 10rpx 0;
+      line-height: 1.6;
+}
+.content .taoke .taoke-con view .number.data-v-76d97028 {
+        font-weight: bold;
+}
+.content .taoke .taoke-con view .commission.data-v-76d97028 {
+        font-size: 30rpx;
+        color: #808080;
+}
+.content .store.data-v-76d97028 {
+  text-align: center;
+  padding-top: 16rpx;
+  color: #333;
+}
+.content .store .store-tit.data-v-76d97028 {
+    font-size: 34rpx;
+    line-height: 50rpx;
+    height: 50rpx;
+    font-weight: 550;
+    color: #5f5f5f;
+}
+.content .store .store-con.data-v-76d97028 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.content .store .store-con view.data-v-76d97028 {
+      background-color: #ffffff;
+      width: 372rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 16rpx;
+      padding: 10rpx 0;
+      line-height: 1.6;
+}
+.content .store .store-con view .number.data-v-76d97028 {
+        font-weight: bold;
+}
+.content .store .nav.data-v-76d97028 {
+    margin-top: 8rpx;
+}
+.content .store .nav .cu-item.cur.data-v-76d97028 {
+      border-bottom: none;
+}
+.content .store .tab.data-v-76d97028 {
+    margin-top: 8rpx;
+}
+.content .store .tab .tab-con.data-v-76d97028 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+}
+.content .store .tab .tab-con .tab-li.data-v-76d97028 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        line-height: 1.6;
+}
+.content .store .tab .tab-con .tab-li .number.data-v-76d97028 {
+          font-weight: bold;
+}
+.content .foot.data-v-76d97028 {
+  margin-top: 8rpx;
+}
+.content .foot .foot-li.data-v-76d97028 {
+    background-color: #ffffff;
+    color: #333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 26rpx;
+    margin: 1rpx 0;
+    -webkit-box-align: centerl;
+    -webkit-align-items: centerl;
+        -ms-flex-align: centerl;
+            align-items: centerl;
+}
+

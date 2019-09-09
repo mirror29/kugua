@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "边买边看",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "animationType": "pop-in",
+  "usingComponents": {
+    "list": "/components/goods-list",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

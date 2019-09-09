@@ -1,0 +1,1 @@
+<view class="_div data-v-02c6ebd0"><block wx:for="{{imgList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="data-v-02c6ebd0"><image src="{{item.imgUrl}}" mode="widthFix" class="data-v-02c6ebd0"></image></view></block></view>

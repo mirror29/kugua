@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "激活用户",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {
+    "t-table": "/components/t-table/t-table",
+    "t-th": "/components/t-table/t-th",
+    "t-tr": "/components/t-table/t-tr",
+    "t-td": "/components/t-table/t-td",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

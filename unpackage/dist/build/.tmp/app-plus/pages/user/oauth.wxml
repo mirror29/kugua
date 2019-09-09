@@ -1,0 +1,1 @@
+<view class="_div data-v-074dc4a6"><web-view webview-styles="{{webviewStyles}}" src="{{url}}" data-event-opts="{{[['tap',[['callback',['$event']]]]]}}" bindtap="__e" class="data-v-074dc4a6"></web-view></view>

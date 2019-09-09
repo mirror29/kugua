@@ -1,0 +1,224 @@
+<template>
+    <div class="page">
+		<swiper
+			class="swiper"
+			:vertical="true"
+			@change="changeCurrent"
+			:style="{ height: height }"
+			:current="index">
+			<swiper-item v-for="(item, index) in videoList" :key="item.id">
+				<chunlei-video class="video" :src="item.src" :style="{ height: height,width: width }" :play="item.flag" @click="clickVideo">
+				</chunlei-video>
+                <cover-view class="cover-view-top">
+                	<!-- #ifdef APP-PLUS-NVUE-->
+                	<text class="top-text">{{item.content}}</text>
+                	<!-- #endif -->
+                </cover-view>
+
+				<cover-view class="cover-view-center" :style="{ height: height,width: width }">
+
+				</cover-view>
+				<cover-view class="cover-view-left" @click="toDetail(item.id)">
+					<!-- #ifdef APP-PLUS-NVUE-->
+                    <cover-image :src="item.img" class="goods-img"></cover-image>
+					<text class="left-text">{{item.name}}</text>
+					<!-- #endif -->
+				</cover-view>
+				<cover-view class="cover-view-right">
+					<cover-image :src="item.check?'../../static/aixinRed.png':'../../static/aixin.png'" class="img" @click.stop="tapLove"></cover-image>
+					<cover-image src="../../static/share-fill.png" class="img" @click.stop="tapShare"></cover-image>
+				</cover-view>
+			</swiper-item>
+		</swiper>
+    </div>
+</template>
+<script>
+	import chunleiVideo from '../../components/chunlei-video/chunlei-video.vue'
+    export default {
+		components:{
+			chunleiVideo
+		},
+        data() {
+            return {
+				sysheight:0,
+				videoList:[],
+				height:'667px',
+				index:0,
+				width:'',
+                page: 1,
+                limit: 5,
+                tag: '视频'
+			}
+        },
+		created(){
+			//#ifdef APP-PLUS
+			plus.screen.lockOrientation("portrait-primary")
+			//#endif
+			this.sysheight = uni.getSystemInfoSync().windowHeight
+			this.height = `${this.sysheight}px`
+			let width = uni.getSystemInfoSync().windowWidth
+			this.width = `${width}px`
+		},
+		async mounted() {
+            let _this = this;
+			await this.pushVideoList()
+            setTimeout(function() {
+                _this.videoPlay(_this.index)
+            }, 20);
+		},
+        updated() {
+            let allLength = this.page*this.limit
+            console.log(this.index,allLength)
+            if(this.index+1 === allLength){
+                this.page++
+                this.pushVideoList()
+            }  
+        },
+        methods: {
+			changeCurrent(e){
+				this.index = e.detail.current;
+				for (let item of this.videoList) {
+					item.flag = false
+				} 
+				this.videoList[this.index].flag = !this.videoList[this.index].flag
+			},
+			pushVideoList(){
+				let promise = new Promise((resolve,reject)=>{
+					uni.request({
+						url: 'https://api.kuguayouhui.com/api/amoy/product/index',
+                        data: {
+                            tag: this.tag,
+                            page: this.page,
+                            limit: this.limit
+                        },
+                        method: 'POST',
+                        header: {
+                            "content-type": "application/x-www-form-urlencoded"
+                        },
+						success: (res) => {
+							let videoGroup = []
+                            let data = res.data.data
+                            console.log(res)
+                            console.log(this.page)
+							for (let key in data) {
+                                videoGroup.push({
+                                    src:data[key].video.videoUrl,
+                                    content:data[key].video.subTitle,
+                                    img: data[key].images,
+                                    id: data[key].id,
+                                    name: data[key].name,
+                                    flag:false,
+                                    check:false
+                                })
+							}
+							this.videoList = [...this.videoList,...videoGroup]
+							resolve()
+						}
+					})
+				})
+				return promise
+			},
+			tapLove(){
+				this.videoList[this.index].check = !this.videoList[this.index].check
+				this.videoList = [...this.videoList]
+			},
+			tapShare(){
+                let id = this.videoList[this.index].id
+                uni.navigateTo({
+                    url: `/pages/product/share?type=other&id=${id}`
+                })
+			},
+            toDetail(id){
+                uni.navigateTo({
+                    url: `/pages/product/detail?id=${id}`
+                })
+            },
+			videoPlay(index){
+				let promise = new Promise((resolve,reject)=>{
+					resolve()
+				})
+				promise.then(res=>{
+					this.videoList[index].flag = !this.videoList[index].flag
+				})
+			},
+			clickVideo(){
+				this.videoList[this.index].flag = !this.videoList[this.index].flag
+			}
+        }
+    }
+</script>
+<style scoped>
+	.swiper{
+
+	}
+    .video {
+
+    }
+    .cover-view-top{
+        position: absolute;
+        top: 260upx;
+        z-index: 9999;
+        font-size: 20px;
+        color: #FFFFFF;
+        left: 40upx;
+    }
+	.cover-view-center{
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.1;
+		z-index: 999;
+	}
+	.cover-view-left{
+		position: absolute;
+		margin-left: 10upx;
+		width: 550upx;
+		bottom: 100upx;
+		z-index: 9999;
+		color: #FFFFFF;
+        background-color: #fff;
+        padding: 16upx;
+        border-radius: 16upx;
+        height: 190upx;
+	}
+    .top-text{
+    	font-size: 20px;
+    	color: #FFFFFF;
+    }
+	.left-text{
+		font-size: 14px;
+		color: #000;
+        width: 360upx;
+        margin-left: 174upx;
+	}
+	.avater{
+		border-radius: 40upx;
+	}
+    .goods-img{
+        position: absolute;
+        height: 160upx;
+        width: 160upx;
+    }
+
+	.cover-view-right{
+		position: absolute;
+		bottom: 80upx;
+		margin-right: 20upx;
+		right: 0;
+		//#ifndef APP-PLUS-NVUE
+		display: flex;
+		flex-direction: column;
+		//#endif
+		z-index: 9999;
+	}
+
+	.img{
+		height: 80upx;
+		width: 80upx;
+        margin: 20upx;
+	}
+	.page{
+
+	}
+
+</style>

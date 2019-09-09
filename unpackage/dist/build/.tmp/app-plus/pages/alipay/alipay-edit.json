@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "编辑支付宝账号",
+  "onReachBottomDistance": 50,
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {}
+}

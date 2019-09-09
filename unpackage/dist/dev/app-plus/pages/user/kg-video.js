@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"video-con.",[1],"data-v-25d0f38d { background-color: #000; height: ",[0,1620],"; }\n.",[1],"video.",[1],"data-v-25d0f38d { width: 100%; margin: ",[0,100]," 0; height: ",[0,1300],"; }\n",],undefined,{path:"./pages/user/kg-video.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/kg-video.wxml') } }));

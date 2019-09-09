@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "分享",
+  "onReachBottomDistance": 50,
+  "bounce": "none",
+  "animationType": "pop-in",
+  "usingComponents": {
+    "skeleton": "/components/quick-skeleton/quick-skeleton"
+  }
+}

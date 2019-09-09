@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "我的收益",
+  "onReachBottomDistance": 50,
+  "enablePullDownRefresh": true,
+  "animationType": "pop-in",
+  "titleNView": {
+    "buttons": [
+      {
+        "fontSrc": "/static/iconfont.ttf",
+        "text": "",
+        "fontSize": "20px",
+        "color": "#303133",
+        "background": "rgba(0,0,0,0)"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

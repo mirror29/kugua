@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "母婴专区",
+  "animationType": "pop-in",
+  "bounce": "none",
+  "usingComponents": {
+    "list": "/components/goods-list",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}
